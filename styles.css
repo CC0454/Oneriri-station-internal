@@ -4,8 +4,9 @@
 }
 
 .font-1 {
-    font-family: "Vollkorn SC", serif;
-    font-style: normal;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
   }
 
 .background_main {
@@ -42,7 +43,7 @@ a {
 
 li:hover {
     background-color:#556F44;
-    transition: 0.2;
+    transition: 0.7s;
 }
 
 .background_info {
@@ -141,24 +142,33 @@ footer {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    max-width: 70.2%;
+    max-width: 70%;
     font-size: 15px;
+    border-left: #dff3e4 2px solid;
+    border-right: #dff3e4 2px solid;
+    border-bottom: #dff3e4 2px solid;
 }
  
 .information_title {
     text-align: center;
     background-color:  #283F3B;
     color: #dff3e4;
-    border-left: #dff3e4 2px solid;
-    border-right: #dff3e4 2px solid;
-    border-top: #dff3e4 2px solid;
+    border-bottom: #dff3e4 2px solid;
 }
 
 .info_text {
     text-align: center;
     color: #dff3e4;
     background-color: #556F44;
-    border: #dff3e4 2px solid;
+}
+
+.header_text {
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    color: #dff3e4;
+    background-color: #556F44;
 }
 
 .information_subtitle {
@@ -166,14 +176,14 @@ footer {
     padding-top: 10px;
 }
 
-.information_text {
-    font-weight: 300;
-    padding-top: 10px;
+.info_image {
+    width: 55%;
+    border-bottom: #dff3e4 2px solid;
+    border-right: #dff3e4 2px solid;
 }
 
-.info_image {
-    border-left: #dff3e4 2px solid;
-    border-right: #dff3e4 2px solid;
+.head_part {
+    display: flex;
 }
 
 .image_main {
@@ -184,14 +194,25 @@ footer {
 }
 
 .image1 {
-    max-width: 25%;
-    border-top: #dff3e4 2px solid;
-    border-left: #dff3e4 2px solid;
-    border-right: #dff3e4 2px solid;
+    max-width: 30%;
+    border:#dff3e4 2px solid;
+    margin: 10px;
 }
 
 .image1:hover {
     max-width: 120%;
     border: #dff3e4 2px solid;
+    transition: 1s;
+    margin: 20px;
+}
+
+.image1:not(:hover) {
     transition: 0.5s;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
